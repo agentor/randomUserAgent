@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay SYSTEM "chrome://randomuseragent/locale/randomuseragent.dtd">
+<overlay id="randomuseragent-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script src="chrome://randomuseragent/content/install.js" />
+	<script src="chrome://randomuseragent/content/uninstall.js" />
+	<script src="chrome://randomuseragent/content/pref.js" />
+	<script src="chrome://randomuseragent/content/overlay.js" />
+	<script src="chrome://randomuseragent/content/version.js" />
+	
+	<stringbundleset id="stringbundleset">
+    	<stringbundle id="randomuseragent-strings" src="chrome://randomuseragent/locale/randomuseragent.properties" />
+	</stringbundleset>
+	
+	<statusbar id="status-bar">
+		<menupopup id="randomuseragent_menu">
+			<menuitem disabled="true" label="&lblSettings;" value="" onclick="" />
+			<menuitem label="&lblChangeUserAgent;" onclick="randomuseragent.getUserAgent();" />
+			<menuitem disabled="true" id="randomuseragent_info" />
+		</menupopup>
+		<statusbarpanel label="RUA" id="randomuseragent_status_bar" context="randomuseragent_menu"/>
+	</statusbar>
+</overlay>
+

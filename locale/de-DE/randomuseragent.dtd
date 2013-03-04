@@ -1,0 +1,9 @@
+<!ENTITY lblChangeUserAgent "User Agent ändern">
+<!ENTITY lblSettings "Einstellungen">
+<!ENTITY lblWindowTitle "randomUserAgent Menü">
+<!ENTITY lblButtonClose "Schließen">
+<!ENTITY lblModus "Modus">
+<!ENTITY lblModusRandom "Zufällig">
+<!ENTITY lblModusLock "Gespeichert">
+<!ENTITY lblModusAds "Werbung">
+<!ENTITY lblModusAmok "Amok">

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://randomuseragent/locale/randomuseragent.dtd">
+	
+<window
+	id="randomuseragent_window"
+	title="&lblWindowTitle;"
+	orient="horizontal"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script src="chrome://randomuseragent/content/pref.js" />
+	<label value="&lblModus;" />
+	<radiogroup>
+
+  <radio selected="false" id="randomuseragent_modus_random" label="&lblModusRandom;" onclick="pref.set('modus','random','string');" />
+  <radio selected="false" id="randomuseragent_modus_lock" label="&lblModusLock;" onclick="pref.set('modus','lock','string');" />
+  <radio selected="false" id="randomuseragent_modus_ads" label="&lblModusAds;" disabled="true" />
+  <radio selected="false" id="randomuseragent_modus_amok" label="&lblModusAmok;" disabled="true" />
+</radiogroup>
+	
+		<script type="text/javascript">
+	var pref = preference;
+	var modus = pref.get('modus','string');
+	document.getElementById('randomuseragent_modus_'+modus).setAttribute('selected',true);
+	</script>
+	
+	<button
+    id="randomuseragent_button_close"
+    class="dialog"
+    label="&lblButtonClose;"
+    accesskey="t"
+    onclick="window.close()"
+    />
+	
+</window>

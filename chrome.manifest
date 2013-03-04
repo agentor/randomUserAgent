@@ -1,0 +1,4 @@
+content	randomuseragent	content/
+locale randomuseragent de-DE locale/de-DE/
+locale randomuseragent en-US locale/en-US/
+overlay	chrome://browser/content/browser.xul	chrome://randomuseragent/content/firefoxOverlay.xul
